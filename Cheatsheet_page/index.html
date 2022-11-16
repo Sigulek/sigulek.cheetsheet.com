@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cheatsheet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="styles.css" rel="stylesheet"
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <Header>
+            <h1>HTML Document Structure</h1>
+        </Header>
+        <main>
+            <div class="intro">
+                <h2>Main elements</h2>
+                <p>Creating a document, we write down a ruleset for the machine to interpret.  
+                    That means we have to follow rules to render the content properly. 
+                    To mark a document <span>html</span> we have to declare it on the first line with <span>&lt!DOCTYPE html&gt</span>.
+                    The declaretion is followed by <span>&lthtml&gt</span> element to indicate limits of the page. 
+                    The page, in turn, is splitted on 2 main sections: <span>head and body</span>.</p>
+            </div>
+            <div class="head">
+                <h2>Head</h2> 
+                <p>The <span>&lthead&gt</span> block is devoted to information for the machine: fonts, characters, stylesheets, 
+                    and other metadata. Therefore, this block is not rendered except for the title.</p>
+            </div>
+            <div class="body">
+                <h2>Body</h2>
+                <p>The <span>&ltbody&gt</span> block is dedicated to humans, hence it is more complicated. 
+                    We can think of this block as a story. Good story has a navigation or starter, main part with all the details, 
+                    and the end with farewell. These sections are called <span>&ltheader&gt, &ltmain&gt, and &ltfooter&gt</span>.</p>
+                <div class="header">
+                    <h3>Header</h3>
+                    <p>It's common practice to use <span>header</span> for a navigation bar or some introducing information. 
+                        For navigation use the <span>&ltnav&gt</span> element.</p>
+                </div>
+                <div class="main">
+                    <h3>Main</h3>
+                    <p>It is what it sounds like. Main part include everything you want to be displayed. 
+                        I believe, you are well orginized, and understand how important it is to keep an order. 
+                        For this purpose, <span>html language</span> has <span>&ltdiv&gt</span> element as a container for other elements.
+                        </p>
+                </div>
+                <div class="footer">
+                    <h3>Footer</h3>
+                    <p>This element is used to conclude the page with contacts, privacy policy, and things like that.</p>
+                </div>
+            </div>
+            <div class="conlusion">
+                <p class="table caption">Let's wrap it up with a table for a visual representation.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4">
+                                    &lt!DOCTYPE html&gt
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="6">
+                                    HTML <br>
+                                    <span>&lthtml&gt&lt/html&gt</span>
+                                </td>
+                                <td colspan="3">
+                                    HEAD <br>
+                                    <span>&lthead&gt&lt/head&gt</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5">
+                                    BODY <br>
+                                    <span>&ltbody&gt&lt/body&gt</span>
+                                </td>
+                                <td colspan="2">
+                                    HEADER <br>
+                                    <span>&ltheader&gt&lt/header&gt</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    MAIN <br>
+                                    <span>&ltmain&gt&lt/main&gt</span>
+                                </td>
+                                <td>
+                                    DIV1 <br>
+                                    <span>&ltdiv class="1"&gt&lt/div&gt</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    DIV2 <br>
+                                    <span>&ltdiv class="2"&gt&lt/div&gt</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    DIV3 <br>
+                                    <span>&ltdiv class="3"&gt&lt/div&gt</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    FOOTER 
+                                    <br>&ltfooter&gt&lt/footer&gt
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    As simple as apple pie.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                <aside>
+                    The contect is rendered one way or another on the screen in the browser, which stipulates styling. 
+                    But it is a completely different ball of wax which is worth a separate page.
+                    </aside>
+            </div>
+        </main>
+        <footer>
+            <div class="bottom">
+                <h2>This is the footer</h2>
+            </div>
+            <p>Therefore, I invite you to keep it touch.</p>
+            <p>Esteblished by Denis Sigulin <br><span>denis@sigulin.ru</span></p>
+        </footer>
+        
+    </body>
+</html>
